@@ -1,0 +1,22 @@
+.header {
+  text-decoration:underline;
+}
+
+.result{
+  font-weight: bold;
+}
+
+.inputs{
+  position: relative;
+  left: 15px;
+}
+
+.centered {
+  text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outter-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

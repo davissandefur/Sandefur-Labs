@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="inputs">
+      <input type='text' ng-model="$ctrl.species" placeholder="Enter species">
+      <input type='number' ng-model='$ctrl.number' placeholder='Enter number'>
+      <button ng-click ="$ctrl.addSpecies();">Add species</button>
+    </div>
+    <div>
+      <div class="col-xs-2 header">Species</div>
+      <div class="col-xs-2 header">Number</div>
+      <div class="col-xs-2 header">Pi</div>
+      <div class="col-xs-2 header">Ln(Pi)</div>
+      <div class="col-xs-4 header">Pi * ln(Pi)</div>
+      <div ng-repeat="species in $ctrl.speciesList">
+        <div class="col-xs-2">{{species.name}}</div>
+        <div class="col-xs-2">{{species.quantity}}</div>
+        <div class="col-xs-2">{{species.Pi}}</div>
+        <div class="col-xs-2">{{species.lnPi}}</div>
+        <div class="col-xs-4">{{species.PilnPi}}</div>
+      </div>
+      <div class="col-xs-4 result">Total: {{$ctrl.total}}</div>
+      <div class="col-xs-4 result">H: {{$ctrl.H}}</div>
+      <div class="col-xs-4 result">E: {{$ctrl.E}}</div>
+    </div>
+  </div>
+</div>
